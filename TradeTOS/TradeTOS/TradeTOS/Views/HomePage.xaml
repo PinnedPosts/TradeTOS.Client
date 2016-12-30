@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:utilities="clr-namespace:TradeTOS.Utilities;assembly=TradeTOS"
+             xmlns:extensions="clr-namespace:TradeTOS.Extensions;assembly=TradeTOS"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             ControlTemplate="{StaticResource activityPageTemplate}"
+             utilities:Globalization.ShowTitle="true"
+             x:Class="TradeTOS.Views.HomePage">
+  <Grid Padding="4" RowSpacing="0" ColumnSpacing="0">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="4"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="4"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="4"/>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="4"/>
+      <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+    <Grid Grid.Row="0" Grid.Column="0" BackgroundColor="#BC215B">
+      <Grid.GestureRecognizers>
+        <TapGestureRecognizer Command="{Binding NavigateCommand}" CommandParameter="OrderPage"/>
+      </Grid.GestureRecognizers>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="50"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Image Grid.Row="1" Source="{extensions:ImageResource order.png}" Aspect="AspectFit"/>
+      <Label Grid.Row="2" utilities:Globalization.Key="order" HorizontalOptions="Center" TextColor="White"/>
+    </Grid>
+    <Grid Grid.Row="0" Grid.Column="2" BackgroundColor="#AB1958">
+       <Grid.GestureRecognizers>
+        <TapGestureRecognizer Command="{Binding NavigateCommand}" CommandParameter="PaymentPage"/>
+      </Grid.GestureRecognizers>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="50"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Image Grid.Row="1" Source="{extensions:ImageResource payment.png}" Aspect="AspectFit"/>
+      <Label Grid.Row="2" utilities:Globalization.Key="payment" HorizontalOptions="Center" TextColor="White"/>
+    </Grid>
+    <Grid Grid.Row="0" Grid.Column="4" BackgroundColor="#86124F">
+       <Grid.GestureRecognizers>
+        <TapGestureRecognizer Command="{Binding NavigateCommand}" CommandParameter="InventoryPage"/>
+      </Grid.GestureRecognizers>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="50"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Image Grid.Row="1" Source="{extensions:ImageResource inventory.png}" Aspect="AspectFit"/>
+      <Label Grid.Row="2" utilities:Globalization.Key="inventory" HorizontalOptions="Center" TextColor="White"/>
+    </Grid>
+    
+    <Grid Grid.Row="2" Grid.Column="0" BackgroundColor="#493954">
+       <Grid.GestureRecognizers>
+        <TapGestureRecognizer Command="{Binding NavigateCommand}" CommandParameter="ReportsPage"/>
+      </Grid.GestureRecognizers>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="50"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Image Grid.Row="1" Source="{extensions:ImageResource reports.png}" Aspect="AspectFit"/>
+      <Label Grid.Row="2" utilities:Globalization.Key="reports" HorizontalOptions="Center" TextColor="White"/>
+    </Grid>
+    <Grid Grid.Row="2" Grid.Column="2" BackgroundColor="#554663">
+       <Grid.GestureRecognizers>
+        <TapGestureRecognizer Command="{Binding ChangeLanguageCommand}"/>
+      </Grid.GestureRecognizers>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="50"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Image Grid.Row="1" Source="{extensions:ImageResource language.png}" Aspect="AspectFit"/>
+      <Label Grid.Row="2" utilities:Globalization.Key="language" HorizontalOptions="Center" TextColor="White"/>
+    </Grid>
+    <Grid Grid.Row="2" Grid.Column="4" BackgroundColor="#5B5487">
+       <Grid.GestureRecognizers>
+        <TapGestureRecognizer Command="{Binding NavigateCommand}" CommandParameter="SettingsPage"/>
+      </Grid.GestureRecognizers>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="50"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Image Grid.Row="1" Source="{extensions:ImageResource settings.png}" Aspect="AspectFit"/>
+      <Label Grid.Row="2" utilities:Globalization.Key="settings" HorizontalOptions="Center" TextColor="White"/>
+    </Grid>
+    
+    <Grid Grid.Row="4" Grid.Column="0" BackgroundColor="#4D75A8">
+       <Grid.GestureRecognizers>
+        <TapGestureRecognizer Command="{Binding DeviceUriCommand}" CommandParameter="http://www.avu.net.in/"/>
+      </Grid.GestureRecognizers>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="50"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Image Grid.Row="1" Source="{extensions:ImageResource aboutus.png}" Aspect="AspectFit"/>
+      <Label Grid.Row="2" utilities:Globalization.Key="aboutus" HorizontalOptions="Center" TextColor="White"/>
+    </Grid>
+    <Grid Grid.Row="4" Grid.Column="2" BackgroundColor="#5199CB">
+       <Grid.GestureRecognizers>
+        <TapGestureRecognizer Command="{Binding DeviceUriCommand}" CommandParameter="PHONE"/>
+      </Grid.GestureRecognizers>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="50"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Image Grid.Row="1" Source="{extensions:ImageResource contactus.png}" Aspect="AspectFit"/>
+      <Label Grid.Row="2" utilities:Globalization.Key="contactus" HorizontalOptions="Center" TextColor="White"/>
+    </Grid>
+    <Grid Grid.Row="4" Grid.Column="4" BackgroundColor="#58BAF2">
+       <Grid.GestureRecognizers>
+        <TapGestureRecognizer Command="{Binding LogoutCommand}"/>
+      </Grid.GestureRecognizers>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="50"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Image Grid.Row="1" Source="{extensions:ImageResource signout.png}" Aspect="AspectFit"/>
+      <Label Grid.Row="2" utilities:Globalization.Key="signout" HorizontalOptions="Center" TextColor="White"/>
+    </Grid>
+  </Grid>
+</ContentPage>

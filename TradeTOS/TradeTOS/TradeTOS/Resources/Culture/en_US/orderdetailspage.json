@@ -1,0 +1,37 @@
+﻿{
+  "Title": "Order Details",
+  "Labels": [
+    {
+      "Id": "productname",
+      "Title": "Product Name"
+    },
+    {
+      "Id": "productcode",
+      "Title": "Product Code"
+    },
+    {
+      "Id": "stockinhand",
+      "Title": "Stock in Hand"
+    },
+    {
+      "Id": "pendingorderquantity",
+      "Title": "Pending Order Quantity"
+    },
+    {
+      "Id": "netonhandquantity",
+      "Title": "Net On-hand Quantity"
+    },
+    {
+      "Id": "rate",
+      "Title": "Rate"
+    },
+    {
+      "Id": "orderquantity",
+      "Title": "Order Quantity"
+    },
+    {
+      "Id": "comments",
+      "Title": "Comments"
+    }
+  ]
+}

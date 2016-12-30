@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:extensions="clr-namespace:TradeTOS.Extensions;assembly=TradeTOS"
+             xmlns:views="clr-namespace:TradeTOS.Views;assembly=TradeTOS"
+             xmlns:utilities="clr-namespace:TradeTOS.Utilities;assembly=TradeTOS"
+             xmlns:convertors="clr-namespace:TradeTOS.Converters;assembly=TradeTOS"
+             ControlTemplate="{StaticResource activityPageTemplate}"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             utilities:Globalization.ShowTitle="true"
+             x:Class="TradeTOS.Views.ReportsPage" x:Name="page">
+  <StackLayout BackgroundColor="Transparent">
+    <views:MetroListView SeparatorVisibility="Default" SeparatorColor="White" RowHeight="70" ItemsSource="{Binding Model}">
+      <views:MetroListView.Resources>
+        <ResourceDictionary>
+          <convertors:ColorConvertor x:Key="cnvDark"></convertors:ColorConvertor>
+        </ResourceDictionary>
+      </views:MetroListView.Resources>
+      <views:MetroListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Grid x:Name="container">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="*"/>
+              </Grid.ColumnDefinitions>
+              <Grid  BackgroundColor="{Binding Source={x:Reference Name=container},Path = BackgroundColor, Converter={StaticResource cnvDark}}">
+                <Label Text="{Binding DisplayName}" VerticalTextAlignment="Center" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="30" FontAttributes="Bold"/>
+              </Grid>
+              <Grid Grid.Column="1" VerticalOptions="Center">
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="*"/>
+                  <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="{Binding Name}" VerticalTextAlignment="Center" TextColor="White"/>
+                <Image Source="{extensions:ImageResource reportprint.png}" Aspect="AspectFit"  Grid.Column="1">
+                  <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding BindingContext.DownloadPDFCommand, Source={Reference page}}" CommandParameter="{Binding Url}"/>
+                  </Image.GestureRecognizers>
+                </Image>
+              </Grid>
+            </Grid>
+          </ViewCell>
+        </DataTemplate>
+      </views:MetroListView.ItemTemplate>
+    </views:MetroListView>
+  </StackLayout>
+</ContentPage>

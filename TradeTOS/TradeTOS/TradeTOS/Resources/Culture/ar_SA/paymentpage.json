@@ -1,0 +1,34 @@
+{
+  "Id": null,
+  "Title": "دفع",
+  "Labels": [
+    {
+      "Id": "receiptno",
+      "Title": "عدد إيصال",
+      "NavigateTo": null
+    },
+    {
+      "Id": "supplier",
+      "Title": "المورد",
+      "NavigateTo": null
+    },
+    {
+      "Id": "date",
+      "Title": "تاريخ",
+      "NavigateTo": null
+    },
+    {
+      "Id": "amountreceived",
+      "Title": "تم استلام المبلغ",
+      "NavigateTo": null
+    },
+    {
+      "Id": "comments",
+      "Title": "تعليقات",
+      "NavigateTo": null
+    }
+  ],
+  "Inputs": [],
+  "PageTitles": [],
+  "Buttons": []
+}

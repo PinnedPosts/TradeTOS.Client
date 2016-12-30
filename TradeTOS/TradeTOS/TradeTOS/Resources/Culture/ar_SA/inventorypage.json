@@ -1,0 +1,39 @@
+{
+  "Id": null,
+  "Title": "المخزون",
+  "Labels": [
+    {
+      "Id": "product",
+      "Title": "المنتج",
+      "NavigateTo": null
+    },
+    {
+      "Id": "warehouse",
+      "Title": "مستودع",
+      "NavigateTo": null
+    },
+    {
+      "Id": "stock",
+      "Title": "مخزون",
+      "NavigateTo": null
+    },
+    {
+      "Id": "uom",
+      "Title": "UOM",
+      "NavigateTo": null
+    },
+    {
+      "Id": "quality",
+      "Title": "جودة",
+      "NavigateTo": null
+    }
+  ],
+  "Inputs": [],
+  "PageTitles": [],
+  "Buttons": [
+    {
+      "Id": "load",
+      "Text": "حمل"
+    }
+  ]
+}

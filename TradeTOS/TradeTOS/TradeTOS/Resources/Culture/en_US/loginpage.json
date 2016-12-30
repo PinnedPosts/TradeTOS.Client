@@ -1,0 +1,26 @@
+﻿{
+  "Title": "Login",
+  "Labels": [
+    {
+      "Id": "dummy",
+      "Title": "Dummy"
+    }
+  ],
+  "Inputs": [
+    {
+      "Id": "userName",
+      "Placeholder": "UserName"
+    },
+    {
+      "Id": "password",
+      "Placeholder": "Password"
+    }
+  ],
+
+  "Buttons": [
+    {
+      "Id": "login",
+      "Text": "Login"
+    }
+  ]
+}

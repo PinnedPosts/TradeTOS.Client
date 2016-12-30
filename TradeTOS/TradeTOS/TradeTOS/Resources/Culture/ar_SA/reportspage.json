@@ -1,0 +1,14 @@
+{
+  "Id": null,
+  "Title": "تقارير",
+  "Labels": [
+    {
+      "Id": "dummy",
+      "Title": "دمية",
+      "NavigateTo": null
+    }
+  ],
+  "Inputs": [],
+  "PageTitles": [],
+  "Buttons": []
+}

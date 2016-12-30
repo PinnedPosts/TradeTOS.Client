@@ -1,0 +1,41 @@
+﻿{
+  "Title": "Home",
+  "Labels": [
+    {
+      "Id": "order",
+      "Title": "Order"
+    },
+    {
+      "Id": "payment",
+      "Title": "Payment"
+    },
+    {
+      "Id": "inventory",
+      "Title": "Inventory"
+    },
+    {
+      "Id": "reports",
+      "Title": "Reports"
+    },
+    {
+      "Id": "language",
+      "Title": "Language"
+    },
+    {
+      "Id": "settings",
+      "Title": "Settings"
+    },
+    {
+      "Id": "signout",
+      "Title": "Sign Out"
+    },
+    {
+      "Id": "aboutus",
+      "Title": "About Us"
+    },
+    {
+      "Id": "contactus",
+      "Title": "Contact Us"
+    }
+  ]
+}

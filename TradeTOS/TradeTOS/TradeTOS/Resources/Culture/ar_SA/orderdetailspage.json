@@ -1,0 +1,49 @@
+{
+  "Id": null,
+  "Title": "تفاصيل الطلب",
+  "Labels": [
+    {
+      "Id": "productname",
+      "Title": "اسم المنتج",
+      "NavigateTo": null
+    },
+    {
+      "Id": "productcode",
+      "Title": "رمز المنتج",
+      "NavigateTo": null
+    },
+    {
+      "Id": "stockinhand",
+      "Title": "الأسهم في اليد",
+      "NavigateTo": null
+    },
+    {
+      "Id": "pendingorderquantity",
+      "Title": "الانتظار للطلب الكمية",
+      "NavigateTo": null
+    },
+    {
+      "Id": "netonhandquantity",
+      "Title": "صافي على يد الكمية",
+      "NavigateTo": null
+    },
+    {
+      "Id": "rate",
+      "Title": "معدل",
+      "NavigateTo": null
+    },
+    {
+      "Id": "orderquantity",
+      "Title": "الكمية النظام",
+      "NavigateTo": null
+    },
+    {
+      "Id": "comments",
+      "Title": "تعليقات",
+      "NavigateTo": null
+    }
+  ],
+  "Inputs": [],
+  "PageTitles": [],
+  "Buttons": []
+}

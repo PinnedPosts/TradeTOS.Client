@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:extensions="clr-namespace:TradeTOS.Extensions;assembly=TradeTOS"
+             xmlns:views="clr-namespace:TradeTOS.Views;assembly=TradeTOS"
+             xmlns:utilities="clr-namespace:TradeTOS.Utilities;assembly=TradeTOS"
+             xmlns:controls="clr-namespace:TradeTOS.Controls;assembly=TradeTOS"
+             xmlns:convertors="clr-namespace:TradeTOS.Converters;assembly=TradeTOS"
+             ControlTemplate="{StaticResource activityPageTemplate}"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             utilities:Globalization.ShowTitle="true"
+             x:Class="TradeTOS.Views.InventoryPage">
+  <StackLayout BackgroundColor="Transparent" Padding="10">
+    <Label utilities:Globalization.Key="product"/>
+    <controls:BindablePicker ItemsSource="{Binding Products}" SelectedValue="Key" DisplayMember="Value" SelectedItem="{Binding SelectedProduct}"/>
+    <Button utilities:Globalization.Key="load" Command="{Binding LoadCommand}"/>
+    <ListView SeparatorVisibility="Default" SeparatorColor="White" RowHeight="200" ItemsSource="{Binding Model}">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Grid x:Name="container" Padding="5">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+              </Grid.ColumnDefinitions>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+              </Grid.RowDefinitions>
+              <Label utilities:Globalization.Key="warehouse" Grid.Row="0"/>
+              <Label utilities:Globalization.Key="stock" Grid.Row="1"/>
+              <Label utilities:Globalization.Key="uom" Grid.Row="2"/>
+              <Label utilities:Globalization.Key="quality" Grid.Row="3"/>
+
+              <Label Text="{Binding Ioh_Warehouse}" FontAttributes="Bold" Grid.Row="0" Grid.Column="1"/>
+              <Label Text="{Binding Ioh_Quantity}" FontAttributes="Bold" Grid.Row="1" Grid.Column="1"/>
+              <Label Text="{Binding Ioh_UOM}" FontAttributes="Bold" Grid.Row="2" Grid.Column="1"/>
+              <Label Text="{Binding Ioh_Quality}" FontAttributes="Bold" Grid.Row="3" Grid.Column="1"/>
+            </Grid>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+</ContentPage>

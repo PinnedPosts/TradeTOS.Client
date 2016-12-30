@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:extensions="clr-namespace:TradeTOS.Extensions;assembly=TradeTOS"
+             xmlns:utilities="clr-namespace:TradeTOS.Utilities;assembly=TradeTOS"
+             ControlTemplate="{StaticResource activityPageTemplate}"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             utilities:Globalization.ShowTitle="true"
+             x:Class="TradeTOS.Views.SettingsPage">
+  <Grid Padding="10" RowSpacing="20">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Label Grid.Row="0" Grid.Column="0" utilities:Globalization.Key="name"/>
+    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Model.UserName}" FontAttributes="Bold"/>
+
+    <Label Grid.Row="1" Grid.Column="0" utilities:Globalization.Key="role"/>
+    <Label Grid.Row="1" Grid.Column="1" Text="{Binding Model.Type}" FontAttributes="Bold"/>
+
+    <Label Grid.Row="2" Grid.Column="0" utilities:Globalization.Key="syncedon"/>
+    <Label Grid.Row="2" Grid.Column="1" Text="{Binding Model.LastSync}" FontAttributes="Bold"/>
+
+    <Button Grid.Row="4" Grid.ColumnSpan="2" utilities:Globalization.Key="sync" Command="{Binding SyncCommand}"/>
+  </Grid>
+</ContentPage>

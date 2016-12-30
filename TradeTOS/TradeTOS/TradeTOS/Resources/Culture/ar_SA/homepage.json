@@ -1,0 +1,54 @@
+{
+  "Id": null,
+  "Title": "الصفحة الرئيسية",
+  "Labels": [
+    {
+      "Id": "order",
+      "Title": "طلب",
+      "NavigateTo": null
+    },
+    {
+      "Id": "payment",
+      "Title": "دفع",
+      "NavigateTo": null
+    },
+    {
+      "Id": "inventory",
+      "Title": "المخزون",
+      "NavigateTo": null
+    },
+    {
+      "Id": "reports",
+      "Title": "تقارير",
+      "NavigateTo": null
+    },
+    {
+      "Id": "language",
+      "Title": "لغة",
+      "NavigateTo": null
+    },
+    {
+      "Id": "settings",
+      "Title": "إعدادات",
+      "NavigateTo": null
+    },
+    {
+      "Id": "signout",
+      "Title": "خروج",
+      "NavigateTo": null
+    },
+    {
+      "Id": "aboutus",
+      "Title": "معلومات عنا",
+      "NavigateTo": null
+    },
+    {
+      "Id": "contactus",
+      "Title": "اتصل بنا",
+      "NavigateTo": null
+    }
+  ],
+  "Inputs": [],
+  "PageTitles": [],
+  "Buttons": []
+}

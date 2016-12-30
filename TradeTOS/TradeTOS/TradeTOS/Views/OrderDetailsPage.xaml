@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:extensions="clr-namespace:TradeTOS.Extensions;assembly=TradeTOS"
+             xmlns:utilities="clr-namespace:TradeTOS.Utilities;assembly=TradeTOS"
+             xmlns:controls="clr-namespace:TradeTOS.Controls;assembly=TradeTOS"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             utilities:Globalization.ShowTitle="true"
+             x:Class="TradeTOS.Views.OrderDetailsPage">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <ScrollView>
+      <Grid Padding="10">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" utilities:Globalization.Key="productname"/>
+        <controls:BindablePicker Grid.Row="1"/>
+
+        <Label Grid.Row="2" utilities:Globalization.Key="productcode"/>
+        <controls:BindablePicker Grid.Row="3"/>
+
+        <Label Grid.Row="4" utilities:Globalization.Key="stockinhand"/>
+        <Label Grid.Row="5" Text="1400" FontAttributes="Bold"/>
+
+        <Label Grid.Row="6" utilities:Globalization.Key="pendingorderquantity"/>
+        <Label Grid.Row="7" Text="500" FontAttributes="Bold"/>
+
+        <Label Grid.Row="8" utilities:Globalization.Key="netonhandquantity"/>
+        <Label Grid.Row="9" Text="900" FontAttributes="Bold"/>
+
+        <Label Grid.Row="10" utilities:Globalization.Key="orderquantity"/>
+        <Entry Grid.Row="11" />
+
+        <Label Grid.Row="12" utilities:Globalization.Key="rate"/>
+        <Entry Grid.Row="13" />
+
+        <Label Grid.Row="14" utilities:Globalization.Key="comments"/>
+        <Editor Grid.Row="15" HeightRequest="70"/>
+      </Grid>
+    </ScrollView>
+    <Button Grid.Row="1" Text="Add" BorderRadius="0" BorderWidth="0"/>
+  </Grid>
+</ContentPage>

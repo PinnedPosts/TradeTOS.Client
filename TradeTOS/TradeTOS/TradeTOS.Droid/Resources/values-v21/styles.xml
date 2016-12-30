@@ -1,0 +1,16 @@
+﻿<resources>
+  <style name="Theme" parent="Theme.Base">
+    <!--If you are using MasterDetailPage you will want to set these, else you can leave them out-->
+    <!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    <item name="android:statusBarColor">@android:color/transparent</item>-->
+  </style>
+  <style name="Theme.Splash" parent="Theme.Base">
+    <item name="android:windowBackground">@drawable/splash</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsTranslucent">false</item>
+    <item name="android:windowIsFloating">false</item>
+    <item name="android:backgroundDimEnabled">true</item>
+  </style>
+</resources>
+

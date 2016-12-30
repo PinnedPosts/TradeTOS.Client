@@ -1,0 +1,89 @@
+{
+  "Id": null,
+  "Title": "المشتركة",
+  "Labels": [
+    {
+      "Id": "language",
+      "Title": "لغة",
+      "NavigateTo": null
+    },
+    {
+      "Id": "cancel",
+      "Title": "إلغاء",
+      "NavigateTo": null
+    },
+    {
+      "Id": "error",
+      "Title": "خطأ",
+      "NavigateTo": null
+    },
+    {
+      "Id": "ok",
+      "Title": "حسنا",
+      "NavigateTo": null
+    },
+    {
+      "Id": "noitems",
+      "Title": "لم يتم العثور على العناصر!!",
+      "NavigateTo": null
+    },
+    {
+      "Id": "pleaseselect",
+      "Title": "الرجاء تحديد المنتج",
+      "NavigateTo": null
+    },
+    {
+      "Id": "invalid",
+      "Title": "غير صالح {0}",
+      "NavigateTo": null
+    },
+    {
+      "Id": "minlength",
+      "Title": "MINLENGTH من {0} {1}",
+      "NavigateTo": null
+    },
+    {
+      "Id": "maxlength",
+      "Title": "يسمح MAXLENGTH ل{0} {1}",
+      "NavigateTo": null
+    },
+    {
+      "Id": "onlynumeric",
+      "Title": "يسمح رقمية الوحيد ل{0}",
+      "NavigateTo": null
+    },
+    {
+      "Id": "required",
+      "Title": "{0} مطلوب",
+      "NavigateTo": null
+    },
+    {
+      "Id": "retailer",
+      "Title": "متاجر التجزئة",
+      "NavigateTo": null
+    },
+    {
+      "Id": "amount",
+      "Title": "كمية",
+      "NavigateTo": null
+    },
+    {
+      "Id": "date",
+      "Title": "تاريخ",
+      "NavigateTo": null
+    },
+    {
+      "Id": "username",
+      "Title": "اسم المستخدم",
+      "NavigateTo": null
+    },
+    {
+      "Id": "password",
+      "Title": "كلمه السر",
+      "NavigateTo": null
+    }
+  ],
+  "Inputs": [],
+  "PageTitles": [],
+  "Buttons": []
+}

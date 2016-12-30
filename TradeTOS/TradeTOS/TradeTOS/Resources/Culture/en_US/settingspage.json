@@ -1,0 +1,24 @@
+﻿{
+  "Title": "Settings",
+  "Labels": [
+    {
+      "Id": "name",
+      "Title": "User Name"
+    },
+    {
+      "Id": "role",
+      "Title": "Role"
+    },
+    {
+      "Id": "syncedon",
+      "Title": "Last Sync"
+    }
+  ],
+
+  "Buttons": [
+    {
+      "Id": "sync",
+      "Text": "Sync"
+    }
+  ]
+}

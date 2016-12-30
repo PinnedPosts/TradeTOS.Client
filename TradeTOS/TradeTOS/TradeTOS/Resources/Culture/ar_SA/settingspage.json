@@ -1,0 +1,29 @@
+{
+  "Id": null,
+  "Title": "إعدادات",
+  "Labels": [
+    {
+      "Id": "name",
+      "Title": "اسم المستخدم",
+      "NavigateTo": null
+    },
+    {
+      "Id": "role",
+      "Title": "دور",
+      "NavigateTo": null
+    },
+    {
+      "Id": "syncedon",
+      "Title": "آخر مزامنة",
+      "NavigateTo": null
+    }
+  ],
+  "Inputs": [],
+  "PageTitles": [],
+  "Buttons": [
+    {
+      "Id": "sync",
+      "Text": "تزامن"
+    }
+  ]
+}

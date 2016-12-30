@@ -1,0 +1,69 @@
+﻿{
+  "Title": "Shared",
+  "Labels": [
+    {
+      "Id": "language",
+      "Title": "Language"
+    },
+    {
+      "Id": "cancel",
+      "Title": "Cancel"
+    },
+    {
+      "Id": "error",
+      "Title": "Error"
+    },
+    {
+      "Id": "ok",
+      "Title": "Ok"
+    },
+    {
+      "Id": "noitems",
+      "Title": "No items found!!"
+    },
+    {
+      "Id": "pleaseselect",
+      "Title": "Please select product"
+    },
+    {
+      "Id": "invalid",
+      "Title": "Invalid {0}"
+    },
+    {
+      "Id": "minlength",
+      "Title": "MinLength of {0} is {1}"
+    },
+    {
+      "Id": "maxlength",
+      "Title": "MaxLength allowed for {0} is {1}"
+    },
+    {
+      "Id": "onlynumeric",
+      "Title": "Only numeric is allowed for {0}"
+    },
+    {
+      "Id": "required",
+      "Title": "{0} is required"
+    },
+    {
+      "Id": "retailer",
+      "Title": "Retailer"
+    },
+    {
+      "Id": "amount",
+      "Title": "Amount"
+    },
+    {
+      "Id": "date",
+      "Title": "Date"
+    },
+    {
+      "Id": "username",
+      "Title": "User Name"
+    },
+    {
+      "Id": "password",
+      "Title": "Password"
+    }
+  ]
+}

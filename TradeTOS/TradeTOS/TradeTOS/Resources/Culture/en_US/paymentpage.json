@@ -1,0 +1,25 @@
+﻿{
+  "Title": "Payment",
+  "Labels": [
+    {
+      "Id": "receiptno",
+      "Title": "Receipt Number"
+    },
+    {
+      "Id": "supplier",
+      "Title": "Supplier"
+    },
+    {
+      "Id": "date",
+      "Title": "Date"
+    },
+    {
+      "Id": "amountreceived",
+      "Title": "Amount Received"
+    },
+    {
+      "Id": "comments",
+      "Title": "Comments"
+    }
+  ]
+}

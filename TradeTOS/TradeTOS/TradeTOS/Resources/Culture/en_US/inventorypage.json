@@ -1,0 +1,31 @@
+﻿{
+  "Title": "Inventory",
+  "Labels": [
+    {
+      "Id": "product",
+      "Title": "Product"
+    },
+    {
+      "Id": "warehouse",
+      "Title": "Warehouse"
+    },
+    {
+      "Id": "stock",
+      "Title": "Stock"
+    },
+    {
+      "Id": "uom",
+      "Title": "UOM"
+    },
+    {
+      "Id": "quality",
+      "Title": "Quality"
+    }
+  ],
+  "Buttons": [
+    {
+      "Id": "load",
+      "Text": "Load"
+    }
+  ]
+}

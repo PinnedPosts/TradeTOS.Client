@@ -1,0 +1,33 @@
+﻿{
+  "Title": "Order",
+  "Labels": [
+    {
+      "Id": "orderno",
+      "Title": "Order Number"
+    },
+    {
+      "Id": "customer",
+      "Title": "Customer"
+    },
+    {
+      "Id": "location",
+      "Title": "Location"
+    },
+    {
+      "Id": "orderdate",
+      "Title": "Order Date"
+    },
+    {
+      "Id": "deliverydate",
+      "Title": "Delivery Date"
+    },
+    {
+      "Id": "deliverydetails",
+      "Title": "Delivery Details"
+    },
+    {
+      "Id": "comments",
+      "Title": "Comments"
+    }
+  ]
+}

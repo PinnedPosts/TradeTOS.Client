@@ -1,0 +1,44 @@
+{
+  "Id": null,
+  "Title": "طلب",
+  "Labels": [
+    {
+      "Id": "orderno",
+      "Title": "رقم الأمر",
+      "NavigateTo": null
+    },
+    {
+      "Id": "customer",
+      "Title": "زبون",
+      "NavigateTo": null
+    },
+    {
+      "Id": "location",
+      "Title": "موقع",
+      "NavigateTo": null
+    },
+    {
+      "Id": "orderdate",
+      "Title": "تاريخ الطلب",
+      "NavigateTo": null
+    },
+    {
+      "Id": "deliverydate",
+      "Title": "تاريخ التسليم او الوصول",
+      "NavigateTo": null
+    },
+    {
+      "Id": "deliverydetails",
+      "Title": "تفاصيل التسليم",
+      "NavigateTo": null
+    },
+    {
+      "Id": "comments",
+      "Title": "تعليقات",
+      "NavigateTo": null
+    }
+  ],
+  "Inputs": [],
+  "PageTitles": [],
+  "Buttons": []
+}

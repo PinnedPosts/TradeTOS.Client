@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:extensions="clr-namespace:TradeTOS.Extensions;assembly=TradeTOS"
+             xmlns:utilities="clr-namespace:TradeTOS.Utilities;assembly=TradeTOS"
+             xmlns:controls="clr-namespace:TradeTOS.Controls;assembly=TradeTOS"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             utilities:Globalization.ShowTitle="true"
+             x:Class="TradeTOS.Views.OrderPage">
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Text="Details" Command="{Binding ShowDetailCommand}"/>
+  </ContentPage.ToolbarItems>
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <ScrollView>
+      <Grid Padding="10">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" utilities:Globalization.Key="orderno"/>
+        <Label Grid.Row="1" FontAttributes="Bold" Text="12345678" FontSize="25"/>
+
+        <Label Grid.Row="2" utilities:Globalization.Key="customer"/>
+        <controls:BindablePicker Grid.Row="3"/>
+
+        <Label Grid.Row="4" utilities:Globalization.Key="location"/>
+        <controls:BindablePicker Grid.Row="5"/>
+
+        <Label Grid.Row="6" utilities:Globalization.Key="orderdate"/>
+        <DatePicker Grid.Row="7"/>
+
+        <Label Grid.Row="8" utilities:Globalization.Key="deliverydate"/>
+        <DatePicker Grid.Row="9"/>
+
+        <Label Grid.Row="10" utilities:Globalization.Key="deliverydetails"/>
+        <Editor Grid.Row="11" HeightRequest="50"/>
+
+        <Label Grid.Row="12" utilities:Globalization.Key="comments"/>
+        <Editor Grid.Row="13" HeightRequest="50"/>
+      </Grid>
+    </ScrollView>
+    <Button Grid.Row="1" Text="Submit" BorderRadius="0" BorderWidth="0"/>
+  </Grid>
+  
+</ContentPage>

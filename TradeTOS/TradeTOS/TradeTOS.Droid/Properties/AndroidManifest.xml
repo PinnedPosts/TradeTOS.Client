@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.avu.tradetos" android:versionName="0.0.2" android:versionCode="2">
+	<uses-sdk android:minSdkVersion="15" android:targetSdkVersion="23" />
+	<application android:label="TradeTOS" android:theme="@style/Theme" android:icon="@drawable/icon"></application>
+</manifest>

@@ -1,0 +1,28 @@
+{
+  "Id": null,
+  "Title": "تسجيل الدخول",
+  "Labels": [
+    {
+      "Id": "dummy",
+      "Title": "دمية",
+      "NavigateTo": null
+    }
+  ],
+  "Inputs": [
+    {
+      "Id": "userName",
+      "Placeholder": "اسم المستخدم"
+    },
+    {
+      "Id": "password",
+      "Placeholder": "كلمه السر"
+    }
+  ],
+  "PageTitles": [],
+  "Buttons": [
+    {
+      "Id": "login",
+      "Text": "تسجيل الدخول"
+    }
+  ]
+}
